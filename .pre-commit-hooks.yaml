@@ -1,8 +1,7 @@
 - id: terraform-fmt
-  name: Terraform fmt
+  name: Format Terraform configuration files
   description: Rewrites Terraform `.tf` and `.tfvars` files to a canonical format
-  entry: terraform fmt -list=true -write=true
+  entry: terraform fmt -list=true -write=true -recursive
   language: system
   files: (\.tf|\.tfvars)$
-  exclude: \.terraform\/.*$
   pass_filenames: false
