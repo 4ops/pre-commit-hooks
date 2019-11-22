@@ -26,10 +26,11 @@ See pre-commit official [docs](https://pre-commit.com/#install)
 
 Example content of `.pre-commit-config.yaml`
 ```yaml
-- repo: git://github.com/4ops/pre-commit-hooks
-  rev: v1.0.0
-  hooks:
-    - id: terraform-fmt
+repos:
+  - repo: git://github.com/4ops/pre-commit-hooks
+    rev: v1.0.0
+    hooks:
+        - id: terraform-fmt
 ```
 
 ### Install hooks
