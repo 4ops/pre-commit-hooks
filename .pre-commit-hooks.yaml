@@ -1,0 +1,8 @@
+- id: terraform-fmt
+  name: Terraform fmt
+  description: Rewrites Terraform `.tf` and `.tfvars` files to a canonical format
+  entry: terraform fmt -list=true -write=true
+  language: system
+  files: (\.tf|\.tfvars)$
+  exclude: \.terraform\/.*$
+  pass_filenames: false
