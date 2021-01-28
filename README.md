@@ -28,7 +28,7 @@ Example content of `.pre-commit-config.yaml`
 ```yaml
 repos:
   - repo: git://github.com/4ops/pre-commit-hooks
-    rev: v1.1.0
+    rev: v1.1.1
     hooks:
         - id: terraform-fmt
         - id: packer-fmt
