@@ -5,3 +5,11 @@
   language: system
   files: (\.tf|\.tfvars)$
   pass_filenames: false
+
+- id: packer-fmt
+  name: Format Packer configuration files
+  description: Rewrites all Packer configuration files to a canonical format. Both configuration files (.pkr.hcl) and variable files (.pkrvars.hcl) are updated.
+  entry: packer fmt -write=true
+  language: system
+  files: (\.pkr.hcl|\.pkrvars.hcl)$
+  pass_filenames: true
